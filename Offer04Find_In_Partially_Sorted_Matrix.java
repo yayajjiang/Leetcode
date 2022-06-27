@@ -116,7 +116,7 @@ class Solution {
 //simplified
 class Solution {
     public boolean findNumberIn2DArray(int[][] matrix, int target) {
-        if(matrix == null || matrix.length == 0) {
+        if(matrix == null || matrix.length == 0|| matrix[0].length == 0) {
             return false;
         }
         int m = matrix.length, n = matrix[0].length;

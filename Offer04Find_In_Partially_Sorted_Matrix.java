@@ -112,7 +112,7 @@ class Solution {
           
 }
 
-
+//It is a BST if twistted 45 degrees, 
 //simplified
 class Solution {
     public boolean findNumberIn2DArray(int[][] matrix, int target) {

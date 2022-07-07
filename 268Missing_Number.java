@@ -37,7 +37,7 @@ class Solution {
 // return -1;
 
 
-//bit operation x⊕x=0  x⊕0=x
+//bit operation x⊕x=0  x⊕0=x, different 1, same 0.
 // int res = nums.length;
 // for(int i = 0; i < nums.length; i++){
 //     res ^= nums[i] ^ i;

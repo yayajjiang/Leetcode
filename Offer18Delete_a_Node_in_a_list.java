@@ -39,3 +39,64 @@ class Solution {
         return head;
     }
 }
+
+// class Solution {
+//     public ListNode deleteNode(ListNode head, int val) {
+//         if(head.val == val) {
+//             return head.next;
+//         }
+
+//         ListNode pre = head;
+//         while ((pre.next != null) && (pre.next.val != val)){
+//             pre = pre.next;
+//         }
+
+//         if(pre.next != null) {
+//             pre.next = pre.next.next;
+//         }
+
+//         return head;
+//     }
+// }
+
+// author：Dine
+// link：https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/solution/jian-zhi-offer-18-shan-chu-lian-biao-de-jie-dian-d/
+
+
+//dummy node
+// class Solution {
+//     public ListNode deleteNode(ListNode head, int val) {
+//         ListNode dummyHead = new ListNode(0);  
+//         dummyHead.next = head;
+//         ListNode cur = dummyHead;  
+//         while (cur.next != null) {
+//             if (cur.next.val == val) {
+//                 cur.next = cur.next.next;
+//             } else {
+//                 cur = cur.next;
+//             }
+//         }
+//         return dummyHead.next;
+//     }
+// }
+
+
+//stack
+// class Solution {
+//     public ListNode deleteNode(ListNode head, int val) {
+//         Stack<ListNode> stack = new Stack<ListNode>();
+//         while (head != null) {
+//             if (head.val != val) {
+//                 stack.push(head);
+//             }
+//             head = head.next;
+//         }
+
+//         while (!stack.isEmpty()) {
+//             stack.peek().next = head;
+//             head = stack.pop();
+//         }
+//         return head;
+//     }
+// }
+

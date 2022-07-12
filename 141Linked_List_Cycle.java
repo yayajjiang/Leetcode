@@ -30,9 +30,9 @@ public class Solution {
 //hashset
 public class Solution {
     public boolean hasCycle(ListNode head) {
-        Set<ListNode> seen = new HashSet<ListNode>();
+        Set<ListNode> seen = new HashSet<ListNode>();//list node as element inserted, not value, to avoid cases that two nodes have the same value
         while (head != null) {
-            if (!seen.add(head)) {  //return true if not in the set, else return false
+            if (!seen.add(head)) {  //return true if the object address is in the set, else return false
                 return true;
             }
             head = head.next;
@@ -43,3 +43,4 @@ public class Solution {
 
 author：LeetCode-Solution
 link：https://leetcode.cn/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/
+
